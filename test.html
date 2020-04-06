@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {color:#7fffd4}
+            li {list-style: none;}
+        </style>
+    </head>
+<body>
+    <h1>
+        hello my world!
+    </h1>
+<script type="text/javascript">
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", function(){
+        console.log(this.responseText);
+    })
+    oReq.open("GET", encodeURI("./끄적끄적.md"));
+    oReq.send();
+</script>
+<script src="./replace.js"></script>
+</body>
+</html>
